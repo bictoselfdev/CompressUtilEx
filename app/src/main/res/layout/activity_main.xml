@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First of all,\nyou can create a test file and check the compression and decompression operation. \n\nFixed path: sdcard/Download/"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnCreateTestFiles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Test Files (sdcard/Download/)"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnZip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="zip"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnUnZip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="unzip"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnTarGzip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tarGzip"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnTarGunzip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tarGunzip"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
